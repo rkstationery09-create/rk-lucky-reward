@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>R.K. Stationery Lucky Reward</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    padding-top:60px;
+}
+
+.box{
+    width:350px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+button{
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    background:#28a745;
+    color:white;
+    cursor:pointer;
+}
+
+#result{
+    margin-top:30px;
+    font-size:28px;
+    color:#e91e63;
+    font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>🎉 R.K. Stationery</h1>
+
+<h3>Lucky Reward</h3>
+
+<button onclick="reward()">
+GET MY REWARD
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+let rewards=[
+"🎁 Free Pencil",
+"🎁 Free Eraser",
+"🎁 Free Sharpener",
+"🎁 ₹5 OFF",
+"🎁 Free Scale",
+"🎁 Free Pen"
+];
+
+function reward(){
+
+let random=Math.floor(Math.random()*rewards.length);
+
+document.getElementById("result").innerHTML=rewards[random];
+
+}
+
+</script>
+
+</body>
+</html>
