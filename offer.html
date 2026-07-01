@@ -1,71 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>R.K. Stationery</title>
-<link rel="stylesheet" href="style.css">
+<title>Offer Test</title>
 </head>
 
-<body>
+<body style="text-align:center;font-family:Arial;padding-top:50px;">
 
-<header>
-  <h1>🏪 R.K. Stationery</h1>
-  <p>Near Kary Vikary Samiti, Railway Station Road, Bhinder</p>
-</header>
+<h2>🎁 R.K. Stationery Offer</h2>
 
-<nav>
-  <a href="#products">Products</a>
-  <a href="#offer">Lucky Offer</a>
-  <a href="#contact">Contact</a>
-</nav>
+<input id="amount" type="number" placeholder="Enter ₹ amount">
+<br><br>
 
-<section class="hero">
-  <h2>🎉 Best Quality Stationery at Best Price</h2>
-  <p>Books | Pens | Copies | Art Supplies</p>
-  <a class="btn" href="#offer">Get Lucky Offer</a>
-</section>
+<button onclick="getOffer()">Get Offer</button>
 
-<section id="products">
-  <h2>🛒 Our Products</h2>
+<h2 id="result"></h2>
 
-  <div class="grid">
-    <div class="card">📘 Notebooks</div>
-    <div class="card">🖊️ Pens</div>
-    <div class="card">✏️ Pencils</div>
-    <div class="card">🎨 Art Kits</div>
-  </div>
-</section>
+<script>
 
-<!-- 🔥 BIG OFFER SECTION -->
-<section id="offer" class="offer-box">
+function getOffer(){
 
-  <h1>🎁 LUCKY OFFER ZONE 🎁</h1>
+let amount = Number(document.getElementById("amount").value);
+let result = document.getElementById("result");
 
-  <p>Enter your bill amount and get instant discount</p>
+if(!amount || amount < 50){
+result.innerHTML = "❌ Minimum ₹50 required";
+return;
+}
 
-  <input type="number" id="amount" placeholder="Enter amount ₹">
+let offers = [
+"🎁 ₹5 Pen",
+"🎁 ₹10 Pencil",
+"🎁 ₹20 Diary",
+"🎁 ₹30 Color Set",
+"🎁 🎉 Lucky Surprise"
+];
 
-  <br>
+let random = Math.floor(Math.random() * offers.length);
 
-  <button onclick="getOffer()">GET OFFER NOW</button>
+result.innerHTML = "₹" + amount + " → " + offers[random];
+}
 
-  <div id="result"></div>
+</script>
 
-</section>
-
-<section id="contact">
-  <h2>📞 Contact Us</h2>
-
-  <p>📍 Near Kary Vikary Samiti, Railway Station Road, Bhinder</p>
-  <p>📱 Mobile: 7727928746</p>
-
-</section>
-
-<footer>
-  <p>© 2026 R.K. Stationery | All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
