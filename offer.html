@@ -2,46 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Offer Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Offer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body style="text-align:center;font-family:Arial;padding-top:50px;">
+<body>
 
-<h2>🎁 R.K. Stationery Offer</h2>
+<header>
+<h1>🎁 Lucky Offer Zone</h1>
+</header>
 
-<input id="amount" type="number" placeholder="Enter ₹ amount">
-<br><br>
+<section class="hero">
 
+<p>Enter bill amount to get reward</p>
+
+<input type="number" id="amount" placeholder="Enter ₹ amount">
+<br>
 <button onclick="getOffer()">Get Offer</button>
 
-<h2 id="result"></h2>
+<div id="result"></div>
 
-<script>
+</section>
 
-function getOffer(){
-
-let amount = Number(document.getElementById("amount").value);
-let result = document.getElementById("result");
-
-if(!amount || amount < 50){
-result.innerHTML = "❌ Minimum ₹50 required";
-return;
-}
-
-let offers = [
-"🎁 ₹5 Pen",
-"🎁 ₹10 Pencil",
-"🎁 ₹20 Diary",
-"🎁 ₹30 Color Set",
-"🎁 🎉 Lucky Surprise"
-];
-
-let random = Math.floor(Math.random() * offers.length);
-
-result.innerHTML = "₹" + amount + " → " + offers[random];
-}
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
