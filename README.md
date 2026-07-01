@@ -1,11 +1,36 @@
-# RK Lucky Reward 🎁
+# 🏪 R.K. Stationery - Lucky Reward Shop
 
-This is a simple reward/offer website created for RK Stationery.
+Welcome to **R.K. Stationery** 🎉  
+A simple smart shop website with a lucky reward system.
 
-## Features
-- Simple landing page
-- Basic styling
-- JavaScript support
+---
 
-## Purpose
-Customer attraction and lucky reward system demo website.
+## 🌐 Features
+- 🎁 Lucky Offer System (Random Rewards)
+- 💰 Bill-based discount (₹50, ₹100, ₹200, ₹300)
+- 📱 Mobile friendly design
+- 🛒 Simple shop UI
+- 📍 Local shop details included
+
+---
+
+## 🎯 How it works
+1. Customer scans QR code 📱  
+2. Opens website 🌐  
+3. Enters bill amount 💰  
+4. Gets random reward 🎁  
+
+---
+
+## 🏪 Shop Details
+📍 Near Kary Vikary Samiti, Railway Station Road, Bhinder  
+📱 Mobile: 7727928746  
+
+---
+
+## 💡 Purpose
+Customer attraction + reward system demo for shop marketing.
+
+---
+
+© 2026 R.K. Stationery
