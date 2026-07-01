@@ -1,37 +1,72 @@
-/* 🔥 BIG LUCKY OFFER BOX */
-.offer-box{
-  background: linear-gradient(135deg,#ff512f,#dd2476);
-  color:white;
-  padding:50px;
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+text-align:center;
 }
 
-.offer-box h1{
-  font-size:40px;
-  margin-bottom:10px;
+header{
+background:#d60000;
+color:white;
+padding:20px;
 }
 
-.offer-box input{
-  padding:15px;
-  width:250px;
-  font-size:18px;
-  border:none;
-  border-radius:8px;
-  margin-top:15px;
+nav{
+background:#222;
+padding:10px;
 }
 
-.offer-box button{
-  padding:15px 30px;
-  font-size:18px;
-  margin-top:15px;
-  background:#000;
-  color:white;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+.hero{
+padding:40px;
+background:linear-gradient(135deg,#ffecd2,#fcb69f);
+}
+
+.grid{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:15px;
+margin:10px;
+width:120px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+padding:10px;
+width:200px;
+margin:10px;
+}
+
+button{
+padding:10px 20px;
+background:green;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:6px;
 }
 
 #result{
-  margin-top:20px;
-  font-size:28px;
-  font-weight:bold;
+margin-top:15px;
+font-size:22px;
+font-weight:bold;
+color:#d60000;
+}
+
+footer{
+background:#222;
+color:white;
+padding:10px;
+margin-top:20px;
 }
