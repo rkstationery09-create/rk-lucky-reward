@@ -1,90 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>R.K. Stationery Offer</title>
-
-<style>
-body{
-    font-family: Arial;
-    text-align: center;
-    background: linear-gradient(135deg,#ffecd2,#fcb69f);
-    padding-top: 60px;
-}
-
-.box{
-    background:white;
-    width:320px;
-    margin:auto;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-input{
-    padding:10px;
-    width:80%;
-    font-size:18px;
-    margin-top:10px;
-}
-
-button{
-    padding:10px 20px;
-    background:green;
-    color:white;
-    border:none;
-    margin-top:10px;
-    cursor:pointer;
-}
-
-#result{
-    margin-top:20px;
-    font-size:22px;
-    font-weight:bold;
-    color:#d60000;
-}
-</style>
+<title>R.K. Stationery</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
+<header>
+  <h1>🏪 R.K. Stationery</h1>
+  <p>Near Kary Vikary Samiti, Railway Station Road, Bhinder</p>
+</header>
 
-<h2>🎉 R.K. Stationery Offer</h2>
+<nav>
+  <a href="#products">Products</a>
+  <a href="#offer">Lucky Offer</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<p>Scan QR & Enter Bill Amount</p>
+<section class="hero">
+  <h2>🎉 Best Quality Stationery at Best Price</h2>
+  <p>Books | Pens | Copies | Art Supplies</p>
+  <a class="btn" href="#offer">Get Lucky Offer</a>
+</section>
 
-<input type="number" id="amount" placeholder="Enter ₹ amount">
+<section id="products">
+  <h2>🛒 Our Products</h2>
 
-<br>
+  <div class="grid">
+    <div class="card">📘 Notebooks</div>
+    <div class="card">🖊️ Pens</div>
+    <div class="card">✏️ Pencils</div>
+    <div class="card">🎨 Art Kits</div>
+  </div>
+</section>
 
-<button onclick="getOffer()">Get Offer</button>
+<!-- 🔥 BIG OFFER SECTION -->
+<section id="offer" class="offer-box">
 
-<div id="result"></div>
+  <h1>🎁 LUCKY OFFER ZONE 🎁</h1>
 
-</div>
+  <p>Enter your bill amount and get instant discount</p>
 
-<script>
+  <input type="number" id="amount" placeholder="Enter amount ₹">
 
-function getOffer(){
+  <br>
 
-let amount = Number(document.getElementById("amount").value);
+  <button onclick="getOffer()">GET OFFER NOW</button>
 
-if(!amount || amount < 50){
-document.getElementById("result").innerHTML =
-"❌ Minimum ₹50 required";
-return;
-}
+  <div id="result"></div>
 
-// RULE: ₹10 = ₹1 discount
-let discount = amount / 10;
+</section>
 
-document.getElementById("result").innerHTML =
-"🎁 You get ₹" + discount + " OFF";
-}
+<section id="contact">
+  <h2>📞 Contact Us</h2>
 
-</script>
+  <p>📍 Near Kary Vikary Samiti, Railway Station Road, Bhinder</p>
+  <p>📱 Mobile: 7727928746</p>
 
+</section>
+
+<footer>
+  <p>© 2026 R.K. Stationery | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
