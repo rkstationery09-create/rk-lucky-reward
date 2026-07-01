@@ -11,16 +11,16 @@ return;
 let offers = [];
 
 if(amount >= 50 && amount < 100){
-offers = ["🎁 ₹5 Pen","🎁 ₹5 Eraser","🎁 ₹5 Scale","🎁 ₹5 Pencil","🎁 ₹5 Sharpener"];
+offers = ["🎁 ₹5 Pen","🎁 ₹5 Pencil","🎁 ₹5 Eraser","🎁 ₹5 Sharpener","🎁 ₹5 Scale"];
 }
 else if(amount >= 100 && amount < 200){
-offers = ["🎁 ₹10 Pen","🎁 ₹10 Pencil","🎁 ₹10 Sketch Color","🎁 ₹10 Eraser"];
+offers = ["🎁 ₹10 Pen","🎁 ₹10 Sketch Color","🎁 ₹10 Pencil","🎁 ₹10 Fevistick"];
 }
 else if(amount >= 200 && amount < 300){
-offers = ["🎁 ₹20 Diary","🎁 ₹20 Color Set","🎁 ₹20 Fevistick"];
+offers = ["🎁 ₹20 Diary","🎁 ₹20 Color Set","🎁 ₹20 Kit"];
 }
 else{
-offers = ["🎁 ₹30 Gift","🎁 🎉 Surprise Box","🎁 ₹30 Color Kit"];
+offers = ["🎁 ₹30 Gift","🎁 🎉 Surprise Box","🎁 ₹30 Premium Kit"];
 }
 
 let random = Math.floor(Math.random() * offers.length);
