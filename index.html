@@ -3,81 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>R.K. Stationery Lucky Reward</title>
-
-<style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    text-align:center;
-    padding-top:60px;
-}
-
-.box{
-    width:350px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 0 15px rgba(0,0,0,.2);
-}
-
-button{
-    padding:15px 35px;
-    font-size:20px;
-    border:none;
-    border-radius:10px;
-    background:#28a745;
-    color:white;
-    cursor:pointer;
-}
-
-#result{
-    margin-top:30px;
-    font-size:28px;
-    color:#e91e63;
-    font-weight:bold;
-}
-</style>
-
+<title>R.K. Stationery</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="box">
+<header>
+  <h1>🏪 R.K. Stationery</h1>
+  <p>Your One Stop Shop for All Stationery Items</p>
+</header>
 
-<h1>🎉 R.K. Stationery</h1>
+<nav>
+  <a href="#products">Products</a>
+  <a href="#offer">Offers</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<h3>Lucky Reward</h3>
+<section class="hero">
+  <h2>🎉 Best Quality Stationery at Best Price</h2>
+  <p>Books | Pens | Copies | Art Supplies</p>
+  <a class="btn" href="#products">Shop Now</a>
+</section>
 
-<button onclick="reward()">
-GET MY REWARD
-</button>
+<section id="products">
+  <h2>🛒 Our Products</h2>
 
-<div id="result"></div>
+  <div class="grid">
+    <div class="card">📘 Notebooks</div>
+    <div class="card">🖊️ Pens</div>
+    <div class="card">✏️ Pencils</div>
+    <div class="card">🎨 Art Kits</div>
+  </div>
+</section>
 
-</div>
+<section id="offer">
+  <h2>🎁 Lucky Offer</h2>
+  <p>Enter your bill amount and get discount</p>
+  <input type="number" id="amount" placeholder="Enter amount ₹">
+  <button onclick="getOffer()">Get Offer</button>
+  <div id="result"></div>
+</section>
 
-<script>
+<section id="contact">
+  <h2>📞 Contact Us</h2>
+  <p>📍 R.K. Stationery Store</p>
+  <p>📱 WhatsApp: 91XXXXXXXXXX</p>
+</section>
 
-let rewards=[
-"🎁 Free Pencil",
-"🎁 Free Eraser",
-"🎁 Free Sharpener",
-"🎁 ₹5 OFF",
-"🎁 Free Scale",
-"🎁 Free Pen"
-];
+<footer>
+  <p>© 2026 R.K. Stationery | All Rights Reserved</p>
+</footer>
 
-function reward(){
-
-let random=Math.floor(Math.random()*rewards.length);
-
-document.getElementById("result").innerHTML=rewards[random];
-
-}
-
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
